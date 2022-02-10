@@ -1,0 +1,48 @@
+{% extends 'organizer/base.html' %}
+{% load static %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center p-5">
+    <div class="col-4"> <h3 class="text-center">Add task</h3> </div>    
+  </div>
+</div>
+
+
+<form action="#">
+    <div class="container border rounded">
+        <div class="row justify-content-around">
+            <div class="m-3 col-md-5 col-sm-12">
+                <input type="text" class="form-control" placeholder="Enter customer name">
+            </div>
+            <div class="m-3 col-md-5 col-sm-12">
+                <input type="text" class="form-control" placeholder="Enter customer name">
+            </div>
+        </div>
+        <div class="m-3">
+            <textarea name="" class="form-control col-xs-12"  rows="10"></textarea>
+        </div>
+        
+        <div class="row justify-content-around">
+            <div class="my-3 col-md-4 col-sm-12 text-center">
+                <input type="checkbox" class="form-check-input" id="agreedCheck">
+                <label class="form-check-label" for="agreedCheck">Agreed</label>
+            </div>
+            <div class="my-3 col-md-4 col-sm-12 text-center">
+                <input type="checkbox" class="form-check-input" id="doneCheck">
+                <label class="form-check-label" for="doneCheck">Done</label>
+            </div>
+            <div class="my-3 col-md-4 col-sm-12 text-center">
+                <input type="checkbox" class="form-check-input" id="onemoreCheck">
+                <label class="form-check-label" for="onemoreCheck">Onemore</label>
+            </div>
+        </div>
+        <div class="my-3 text-center">
+            <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+        </div>
+    </div>
+  </form>
+{% endblock %}

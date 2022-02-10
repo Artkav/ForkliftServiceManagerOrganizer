@@ -1,0 +1,38 @@
+{% extends 'organizer/base.html' %}
+{% load static %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center p-5">
+    <div class="col-4"> <h3 class="text-center">Customer list</h3> </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-around">
+    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12  m-3 p-0" style="width:180px ;height:120px">
+      <a href="{% url 'organizer:customer' %}">
+        Customer name
+      </a>
+    </div>
+    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12  m-3 p-0" style="width:180px ;height:120px">
+      <a href="{% url 'organizer:customer' %}">
+        Customer name
+      </a>
+    </div>
+    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12  m-3 p-0" style="width:180px ;height:120px">
+      <a href="{% url 'organizer:customer' %}">
+        Customer name
+      </a>
+    </div>
+    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12  m-3 p-0" style="width:180px ;height:120px">
+      <a href="{% url 'organizer:customer' %}">
+        Customer name
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

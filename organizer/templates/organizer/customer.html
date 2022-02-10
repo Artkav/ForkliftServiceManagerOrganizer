@@ -1,0 +1,20 @@
+{% extends 'organizer/base.html' %}
+{% load static %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center p-5">
+    <div class="col-4"> <h3 class="text-center">{{ customer.name }}</h3> </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h1>Customer Page</h1>
+  </div>
+</div>
+
+{% endblock %}
